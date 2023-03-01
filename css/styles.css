@@ -3,6 +3,7 @@
     --color-secondary: #434455;
     --color-accent: #4D5AE5;
     --color-link-active: #404BBF;
+    --color-footer-link-active: #31D0AA;
     --color-main-bg: #FFFFFF;
     --leter-spacing-logo: 0.03em;
     --leter-spacing-button: 0.04em;
@@ -152,6 +153,11 @@ h6 {
 .hero {
     background-color: var(--color-main);
     padding: 188px 0;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
 .hero-title {
@@ -191,7 +197,7 @@ h6 {
 
 
 
-/* Features, Execution, Team */
+/* Features, Execution, Team, Customers */
 
 .execution-list {
     display: flex;
@@ -228,7 +234,13 @@ h6 {
 
 .section-text {
     color: var(--color-secondary);
-    margin: 0;
+    margin-bottom: 8px;
+
+}
+
+.features-svg {
+    width: 64px;
+    height: 64px;
 }
 
 .team {
@@ -250,6 +262,78 @@ h6 {
 .employee {
     text-align: center;
     padding: 32px 0;
+}
+
+.customers {
+    padding: 130px 0 120px 0;
+}
+
+.socials-list {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+}
+
+.socials-item {
+    width: 40px;
+    height: 40px;
+}
+
+.socials-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-accent);
+    border-radius: 50%;
+}
+
+.socials-link:hover {
+    background-color: var(--color-link-active);
+}
+
+.socials-link:focus {
+    background-color: var(--color-link-active);
+}
+
+.socials-icon {
+    width: 16px;
+    height: 16px;
+    color: #4D5AE5;
+}
+
+.customers-list {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+}
+
+.customers-item {
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+}
+
+.customers-item:hover {
+    border: 1px solid var(--color-link-active)
+}
+
+.customers-item:focus {
+    border: 1px solid var(--color-link-active);
+}
+
+.customers-svg {
+    width: 104px;
+    height: 56px;
+    margin: 16px 32px;
+}
+
+.customers-svg:hover {
+    color: var(--color-link-active);
+}
+
+.customers-svg:focus {
+    color: var(--color-link-active);
 }
 
 
@@ -278,11 +362,48 @@ h6 {
     width: 264px;
 }
 
+.footer-title {
+    color: var(--color-main-bg);
+    font-size: 16px;
+}
+
+.footer-socials-list {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+}
+
+.footer-socials-item {
+    width: 40px;
+    height: 40px;
+}
+
+.footer-socials-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+.footer-socials-link:hover {
+    background-color: var(--color-footer-link-active);
+}
+
+.footer-socials-link:focus {
+    background-color: var(--color-footer-link-active);
+}
+
+.footer-socials-icon {
+    width: 24px;
+    height: 24px;
+}
+
 
 
 /* Portfolio Page */
-
-
 
 /* Hero */
 
