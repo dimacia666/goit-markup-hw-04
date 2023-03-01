@@ -238,6 +238,16 @@ h6 {
 
 }
 
+.features-box {
+    display: flex;
+    background-color: #F4F4FD;
+    width: 264px;
+    height: 112px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+
 .features-svg {
     width: 64px;
     height: 64px;
@@ -310,16 +320,25 @@ h6 {
 }
 
 .customers-item {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.costomers-link {
     border: 1px solid #8E8F99;
     border-radius: 4px;
 }
 
-.customers-item:hover {
-    border: 1px solid var(--color-link-active)
+.costomers-link:hover {
+    border-color: var(--color-link-active);
+    color: var(--color-link-active);
 }
 
-.customers-item:focus {
-    border: 1px solid var(--color-link-active);
+.costomers-link:focus {
+    border-color: var(--color-link-active);
+    color: var(--color-link-active);
 }
 
 .customers-svg {
@@ -345,6 +364,14 @@ h6 {
     padding: 100px 0;
 }
 
+.footer-container {
+    max-width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    gap: 120px;
+}
+
 .footer-logo {
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
@@ -365,6 +392,7 @@ h6 {
 .footer-title {
     color: var(--color-main-bg);
     font-size: 16px;
+    padding-bottom: 16px;
 }
 
 .footer-socials-list {
@@ -405,7 +433,7 @@ h6 {
 
 /* Portfolio Page */
 
-/* Hero */
+/* Search */
 
 .search-portfolio {
     padding: 96px 0 120px 0;
@@ -486,10 +514,27 @@ h6 {
     column-gap: 24px;
 }
 
+.design-link {
+    width: 360px;
+    height: 420px;
+    margin: 0 auto;
+    text-decoration: none;
+}
+
 .design-item {
     flex-basis: calc((100% - 48px) / 3);
     background-color: var(--color-main-bg);
     border: 1px solid #E7E9FC;
+}
+
+.design-item:hover {
+    border: 1px solid #F4F4FD;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.design-item:focus {
+    border: 1px solid #F4F4FD;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .design-img {
